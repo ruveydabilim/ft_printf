@@ -6,7 +6,7 @@
 /*   By: rbilim <rbilim@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/26 14:54:30 by rbilim            #+#    #+#             */
-/*   Updated: 2025/06/27 14:20:09 by rbilim           ###   ########.fr       */
+/*   Updated: 2025/06/27 15:27:28 by rbilim           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,6 @@
 # define FT_PRINTF_H
 # include <stdarg.h>
 # include <unistd.h>
-# include <stdlib.h>
-
 
 int		ft_printf(const char *format, ...);
 void	ft_putchar_fd(int c, int fd, int *len);

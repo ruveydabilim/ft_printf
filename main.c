@@ -3,10 +3,9 @@
 
 int main()
 {
-/* 	ft_printf("%d\n",ft_printf("%%%%%%%\n%d\n", 1, 42));
-	printf("%d\n",printf("%%%%%%%\n%d\n", 1, 42)); */
-	int a = 1111110;
- 	printf("%p \n", &a);
-	ft_printf("%p \n", &a);
-
+	int a = 0;
+ 	//ft_printf("%d\n",ft_printf("%%%%%%%s\n%d\n%", 1, 42));
+	//ft_printf("%d\n",ft_printf("%%%%%%%aaa", 42, 7));
+	ft_printf("%d\n", ft_printf("%4a%\n",42, 7));
+	printf("%d\n", printf("%4a%\n",42, 7));
 }

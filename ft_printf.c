@@ -6,7 +6,7 @@
 /*   By: rbilim <rbilim@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/24 14:40:27 by rbilim            #+#    #+#             */
-/*   Updated: 2025/06/27 14:19:41 by rbilim           ###   ########.fr       */
+/*   Updated: 2025/06/27 18:34:15 by rbilim           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,15 +46,18 @@ int	ft_printf(const char *format, ...)
 	va_start(args, format);
 	while (format[i])
 	{
-		while (format[i] == '%')
+		if (format[i] == '%')
 		{
 			if (format[++i])
 				checkformat(args, format[i], &len);
 			else
+			{
+				va_end(args);
 				return (-1);
-			i++;
+			}
 		}
-		ft_putchar_fd(format[i], 1, &len);
+		else
+			ft_putchar_fd(format[i], 1, &len);
 		i++;
 	}
 	va_end(args);

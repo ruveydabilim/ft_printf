@@ -6,7 +6,7 @@
 /*   By: rbilim <rbilim@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/26 17:16:56 by rbilim            #+#    #+#             */
-/*   Updated: 2025/06/26 18:46:15 by rbilim           ###   ########.fr       */
+/*   Updated: 2025/06/27 15:21:41 by rbilim           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@ void	ft_putstr_fd(char *s, int fd, int *len)
 {
 	int	i;
 
+	if (!s)
+		s = "(null)";
 	i = 0;
 	while (s[i])
 	{
